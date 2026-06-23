@@ -1,5 +1,3 @@
-# fast_verified_mul
-Formal verification of fast multiplication and division algorithms in Lean, assisted by Aristotle @Aristotle-Harmonic, Claude Opus 4.7, and GPT-5.
+"Stable" version of this project for the DC&V codebase.
 
-This repository is continuously updated with new proof code. Not all new additions are final drafts.
-
+AI-assisted formal verification of fast multiplication and division algorithms in Lean, with the help of Aristotle @Aristotle-Harmonic, Claude Opus 4.7, and GPT-5. These are not "program verification" projects; we specify and prove the correctness of the general mathematical definition of each algorithm.
