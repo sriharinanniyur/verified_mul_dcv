@@ -1,0 +1,946 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["5e9cae08708dcac1.olean"],
+  "m": false,
+  "i": "e538977450c2d025.ilean",
+  "c": "ee02313e18c56340.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/home/n/Documents/github/verified_mul_dcv/.lake/packages/Cli/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/batteries/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/Qq/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/aesop/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/importGraph/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/plausible/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/mathlib/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/cslib/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/build/lib/lean /home/n/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean /home/n/Documents/github/verified_mul_dcv/fast_verified_mul/fft_time_draft.lean -o /home/n/Documents/github/verified_mul_dcv/.lake/build/lib/lean/fast_verified_mul/fft_time_draft.olean -i /home/n/Documents/github/verified_mul_dcv/.lake/build/lib/lean/fast_verified_mul/fft_time_draft.ilean -c /home/n/Documents/github/verified_mul_dcv/.lake/build/ir/fast_verified_mul/fft_time_draft.c --setup /home/n/Documents/github/verified_mul_dcv/.lake/build/ir/fast_verified_mul/fft_time_draft.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:28:39: This simp argument is unused:\n  ih\n\nHint: Omit it from the simp argument list.\n  simp +decide [ ̵List.range'_concat,̵ ̵i̵h̵ ̵]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:25:2: The `refine'` tactic is discouraged: please strongly consider using `refine` or `apply` instead.\n\nNote: This linter can be disabled with `set_option linter.style.refine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:26:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:29:4: The `refine'` tactic is discouraged: please strongly consider using `refine` or `apply` instead.\n\nNote: This linter can be disabled with `set_option linter.style.refine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:35:8: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:28:4: 'simp +decide [ List.range'_concat, ih ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:28:4: Try this:\n  [apply] simp +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range', Std.Legacy.Range.size,\n    tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure, Id.run_pure]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:29:4: 'refine' Vector.ext fun i => _' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:28:4: 'simp +decide [ List.range'_concat, ih ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:28:4: Try this:\n  [apply] simp +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range', Std.Legacy.Range.size,\n    tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure, Id.run_pure]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:30:4: 'intro hi' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:28:4: 'simp +decide [ List.range'_concat, ih ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:28:4: Try this:\n  [apply] simp +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range', Std.Legacy.Range.size,\n    tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure, Id.run_pure]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:32:6: 'rw [if_neg (ne_of_gt hi')]' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:28:4: 'simp +decide [ List.range'_concat, ih ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:28:4: Try this:\n  [apply] simp +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range', Std.Legacy.Range.size,\n    tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure, Id.run_pure]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:33:6: 'convert congr_arg (fun v : Vector α K => v[i]) (ih (fun j => f ⟨j, Nat.lt_succ_of_lt j.2⟩)) using 1' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:28:4: 'simp +decide [ List.range'_concat, ih ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:28:4: Try this:\n  [apply] simp +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range', Std.Legacy.Range.size,\n    tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure, Id.run_pure]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:35:8: 'induction' (List.range' 0 K).attach using List.reverseRecOn with x xs ih' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:33:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:35:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:63:48: This simp argument is unused:\n  ih\n\nHint: Omit it from the simp argument list.\n  simp +decide [ ̵Vector.getElem_set,̵ ̵i̵h̵ ̵]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:63:88: This simp argument is unused:\n  Fin.ext_iff\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵F̵i̵n̵.̵e̵x̵t̵_̵i̵f̵f̵,̵ ̵N̵a̵t̵.̵l̵t̵_̵s̵u̵c̵c̵_̵i̵f̵f̵ ̵]̵[̲N̲a̲t̲.̲l̲t̲_̲s̲u̲c̲c̲_̲i̲f̲f̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:63:101: This simp argument is unused:\n  Nat.lt_succ_iff\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵F̵i̵n̵.̵e̵x̵t̵_̵i̵f̵f̵,̵ ̵N̵a̵t̵.̵l̵t̵_̵s̵u̵c̵c̵_̵i̵f̵f̵ ̵]̵[̲F̲i̲n̲.̲e̲x̲t̲_̲i̲f̲f̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:75:19: This simp argument is unused:\n  Id.run\n\nHint: Omit it from the simp argument list.\n  simp +decide ̵[̵ ̵I̵d̵.̵r̵u̵n̵ ̵]̵\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:60:4: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:66:22: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:78:4: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: 'simp +decide' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: Try this:\n  [apply] simp +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range', Std.Legacy.Range.size,\n    tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_yield_eq_foldlM, ret_bind, ret_map, Fin.getElem_fin]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:55:2: 'intro OMEGA' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: 'simp +decide' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: Try this:\n  [apply] simp +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range', Std.Legacy.Range.size,\n    tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_yield_eq_foldlM, ret_bind, ret_map, Fin.getElem_fin]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:57:2: 'have h_ind :\n  ∀ j : Fin (n + 1),\n    (List.foldl\n          (fun (b : Vector F n × F) (x : { x : ℕ // x ∈ List.range' 0 n }) =>\n            ⟨b.1.set x.val b.2 (by grind +splitImp), b.2 * OMEGA⟩)\n          ⟨Vector.replicate n 1, 1⟩ (List.take j.val (List.attach (List.range' 0 n)))).1 =\n      Vector.ofFn (fun i : Fin n => if i.val < j.val then OMEGA ^ i.val else 1) :=\n  by\n  intro j\n  induction' j using Fin.induction with j ih; · aesop;\n  · simp_all +decide [List.take_add_one]; ext i; simp +decide [Vector.getElem_set, ih];\n    split_ifs <;> simp_all +decide [Fin.ext_iff, Nat.lt_succ_iff];\n    · have h_ind :\n        ∀ k : ℕ,\n          k ≤ n →\n            (List.foldl\n                  (fun (b : Vector F n × F) (x : { x : ℕ // x ∈ List.range' 0 n }) =>\n                    ⟨b.1.set x.val b.2 (by grind), b.2 * OMEGA⟩)\n                  ⟨Vector.replicate n 1, 1⟩ (List.take k (List.attach (List.range' 0 n)))).2 =\n              OMEGA ^ k :=\n        by intro k hk; induction' k with k ih <;> simp_all +decide [pow_succ, List.take_add_one]; grind +splitIndPred\n      generalize_proofs at *; exact h_ind i (by linarith);\n    · exact absurd ‹_› (by simp +decide [← ‹(j : ℕ) = i›]);\n    · exact False.elim <| lt_asymm ‹_› ‹_›;\n    · exact False.elim (‹¬(j : ℕ) = i› (le_antisymm ‹_› ‹_›))' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:62:6: 'simp_all +decide [ List.take_add_one ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:62:6: Try this:\n  [apply] simp_all +decide only [Fin.val_succ, Order.lt_add_one_iff, Fin.val_fin_le]",
+   "level": "info"},
+  {"message": "fast_verified_mul/fft_time_draft.lean:63:6: 'ext i' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:62:6: 'simp_all +decide [ List.take_add_one ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:62:6: Try this:\n  [apply] simp_all +decide only [Fin.val_succ, Order.lt_add_one_iff, Fin.val_fin_le]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:64:8: 'have h_ind :\n  ∀ k : ℕ,\n    k ≤ n →\n      (List.foldl\n            (fun (b : Vector F n × F) (x : { x : ℕ // x ∈ List.range' 0 n }) =>\n              ⟨b.1.set x.val b.2 (by grind), b.2 * OMEGA⟩)\n            ⟨Vector.replicate n 1, 1⟩ (List.take k (List.attach (List.range' 0 n)))).2 =\n        OMEGA ^ k :=\n  by intro k hk; induction' k with k ih <;> simp_all +decide [pow_succ, List.take_add_one];\n  grind +splitIndPred' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:62:6: 'simp_all +decide [ List.take_add_one ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:62:6: Try this:\n  [apply] simp_all +decide only [Fin.val_succ, Order.lt_add_one_iff, Fin.val_fin_le]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:68:8: 'generalize_proofs at *' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:62:6: 'simp_all +decide [ List.take_add_one ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:62:6: Try this:\n  [apply] simp_all +decide only [Fin.val_succ, Order.lt_add_one_iff, Fin.val_fin_le]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:69:8: 'exact h_ind i (by linarith)' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:62:6: 'simp_all +decide [ List.take_add_one ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:62:6: Try this:\n  [apply] simp_all +decide only [Fin.val_succ, Order.lt_add_one_iff, Fin.val_fin_le]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:70:8: 'exact absurd ‹_› (by simp +decide [← ‹(j : ℕ) = i›])' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:62:6: 'simp_all +decide [ List.take_add_one ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:62:6: Try this:\n  [apply] simp_all +decide only [Fin.val_succ, Order.lt_add_one_iff, Fin.val_fin_le]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:71:8: 'exact False.elim <| lt_asymm ‹_› ‹_›' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:62:6: 'simp_all +decide [ List.take_add_one ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:62:6: Try this:\n  [apply] simp_all +decide only [Fin.val_succ, Order.lt_add_one_iff, Fin.val_fin_le]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:72:8: 'exact False.elim (‹¬(j : ℕ) = i› (le_antisymm ‹_› ‹_›))' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: 'simp +decide' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: Try this:\n  [apply] simp +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range', Std.Legacy.Range.size,\n    tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_yield_eq_foldlM, ret_bind, ret_map, Fin.getElem_fin]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:73:2: 'generalize_proofs at *' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: 'simp +decide' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: Try this:\n  [apply] simp +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range', Std.Legacy.Range.size,\n    tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_yield_eq_foldlM, ret_bind, ret_map, Fin.getElem_fin]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:74:2: 'convert congr_arg (fun v : Vector F n => v[j]) (h_ind ⟨n, Nat.lt_succ_self n⟩) using 1' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: 'simp +decide' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: Try this:\n  [apply] simp +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range', Std.Legacy.Range.size,\n    tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_yield_eq_foldlM, ret_bind, ret_map, Fin.getElem_fin]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:76:4: 'rw [List.take_of_length_le (by simp +decide)]' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: 'simp +decide' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: Try this:\n  [apply] simp +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range', Std.Legacy.Range.size,\n    tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_yield_eq_foldlM, ret_bind, ret_map, Fin.getElem_fin]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:77:4: 'congr! 2' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: 'simp +decide' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: Try this:\n  [apply] simp +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range', Std.Legacy.Range.size,\n    tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_yield_eq_foldlM, ret_bind, ret_map, Fin.getElem_fin]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:78:4: 'induction' (List.range' 0 n).attach using List.reverseRecOn with x xs ih' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: 'simp +decide' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: Try this:\n  [apply] simp +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range', Std.Legacy.Range.size,\n    tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_yield_eq_foldlM, ret_bind, ret_map, Fin.getElem_fin]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:79:4: 'congr! 2' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: 'simp +decide' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:54:18: Try this:\n  [apply] simp +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range', Std.Legacy.Range.size,\n    tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_yield_eq_foldlM, ret_bind, ret_map, Fin.getElem_fin]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:80:4: 'clear ih' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:56:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:57:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:58:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:63:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:64:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:65:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:78:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:98:52: 'simp +decide [ Fin.ext_iff, d ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:98:52: Try this:\n  [apply] simp +decide only [mem_univ, mem_union, mem_image, true_and, true_iff]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:99:6: 'exact Or.inl ⟨⟨c, by linarith [Fin.is_lt j, pow_succ' 2 k_pred]⟩, rfl⟩' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:98:52: 'simp +decide [ Fin.ext_iff, d ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:98:52: Try this:\n  [apply] simp +decide only [mem_univ, mem_union, mem_image, true_and, true_iff]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:100:6: 'exact Or.inr ⟨⟨c, by linarith [Fin.is_lt j, pow_succ' 2 k_pred]⟩, rfl⟩' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:90:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:106:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:134:69: This simp argument is unused:\n  Finset.sum_add_distrib\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵F̵i̵n̵s̵e̵t̵.̵m̵u̵l̵_̵s̵u̵m̵[̲F̲i̲n̲s̲e̲t̲.̲m̲u̲l̲_̲s̲u̲m̲ _ _ _, mul_assoc, m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵ ̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵a̵d̵d̵_̵d̵i̵s̵t̵r̵i̵b̵ ̵]̵m̲u̲l̲_̲l̲e̲f̲t̲_̲c̲o̲m̲m̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:120:21: 'simp [Finset.mem_range, Finset.mem_image]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:120:21: Try this:\n  [apply] simp only [mem_range, mem_union, mem_image]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:121:21: 'exact\n  ⟨fun hj => by\n    rcases Nat.even_or_odd' j with ⟨c, rfl | rfl⟩ <;> [left; right] <;>\n      exact ⟨c, by rw [pow_succ'] at hj; linarith, rfl⟩,\n    fun hj => by rcases hj with (⟨c, hc, rfl⟩ | ⟨c, hc, rfl⟩) <;> rw [pow_succ'] <;> linarith⟩' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:134:2: 'simp_all +decide [ Finset.mul_sum _ _ _, mul_assoc, mul_left_comm, Finset.sum_add_distrib ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:134:2: Try this:\n  [apply] simp_all +decide only [Fin.getElem_fin]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:135:2: 'rw [Nat.mod_eq_of_lt i'.2]' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:118:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:121:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:129:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:130:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:133:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:205:4: The `show` tactic should only be used to indicate intermediate goal states for readability.\nHowever, this tactic invocation changed the goal. Please use `change` instead for these purposes.\n\nNote: This linter can be disabled with `set_option linter.style.show false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:241:2: 'simp' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:241:2: Try this:\n  [apply] simp only [Vector.getElem_ofFn]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:242:2: 'exact t_table_get n OMEGA ⟨i, hi⟩' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:268:19: This simp argument is unused:\n  vector_set_forIn_range\n\nHint: Omit it from the simp argument list.\n  simp +decide [̵ ̵v̵e̵c̵t̵o̵r̵_̵s̵e̵t̵_̵f̵o̵r̵I̵n̵_̵r̵a̵n̵g̵e̵,̵ ̵h̵j̵'̵ ̵]̵[̲h̲j̲'̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:281:21: This simp argument is unused:\n  List.mem_map\n\nHint: Omit it from the simp argument list.\n  simp +decide [̵ ̵L̵i̵s̵t̵.̵m̵e̵m̵_̵m̵a̵p̵,̵ ̵L̵i̵s̵t̵.̵m̵e̵m̵_̵r̵a̵n̵g̵e̵'̵ ̵]̵[̲L̲i̲s̲t̲.̲m̲e̲m̲_̲r̲a̲n̲g̲e̲'̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:19: This simp argument is unused:\n  Vector.getElem_set\n\nHint: Omit it from the simp argument list.\n  simp +decide [̵ ̵V̵e̵c̵t̵o̵r̵.̵g̵e̵t̵E̵l̵e̵m̵_̵s̵e̵t̵,̵ ̵L̵i̵s̵t̵.̵f̵o̵l̵d̵l̵ ̵]̵[̲L̲i̲s̲t̲.̲f̲o̲l̲d̲l̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:39: This simp argument is unused:\n  List.foldl\n\nHint: Omit it from the simp argument list.\n  simp +decide [̵ ̵V̵e̵c̵t̵o̵r̵.̵g̵e̵t̵E̵l̵e̵m̵_̵s̵e̵t̵,̵ ̵L̵i̵s̵t̵.̵f̵o̵l̵d̵l̵ ̵]̵[̲V̲e̲c̲t̲o̲r̲.̲g̲e̲t̲E̲l̲e̲m̲_̲s̲e̲t̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:302:21: This simp argument is unused:\n  List.mem_map\n\nHint: Omit it from the simp argument list.\n  simp +decide [̵ ̵L̵i̵s̵t̵.̵m̵e̵m̵_̵m̵a̵p̵,̵ ̵L̵i̵s̵t̵.̵m̵e̵m̵_̵r̵a̵n̵g̵e̵'̵ ̵]̵[̲L̲i̲s̲t̲.̲m̲e̲m̲_̲r̲a̲n̲g̲e̲'̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:265:2: The `refine'` tactic is discouraged: please strongly consider using `refine` or `apply` instead.\n\nNote: This linter can be disabled with `set_option linter.style.refine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:273:18: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:291:18: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:301:6: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:268:4: 'simp +decide [ vector_set_forIn_range, hj' ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:268:4: Try this:\n  [apply] simp +decide only [Nat.reducePow, bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure, Vector.getElem_ofFn]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:269:4: 'have h_foldl :\n  ∀ (l : List (Fin K_pred)),\n    j ∈ List.map (fun x => x.val) l →\n      (List.foldl\n            (fun (b : Vector F (2 * K_pred)) (x : Fin K_pred) =>\n              (b.set x.val (E'[x.val] + OMEGA ^ x.val * O'[x.val]) (by linarith [Fin.is_lt x])).set (x.val + K_pred)\n                (E'[x.val] - OMEGA ^ x.val * O'[x.val]) (by linarith [Fin.is_lt x]))\n            (Vector.replicate (2 * K_pred) 0) l)[j] =\n        E'[j] + OMEGA ^ j * O'[j] :=\n  by\n  all_goals generalize_proofs at *;\n  intro l hl; induction' l using List.reverseRecOn with l ih <;> simp_all +decide [List.foldl]; grind' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:268:4: 'simp +decide [ vector_set_forIn_range, hj' ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:268:4: Try this:\n  [apply] simp +decide only [Nat.reducePow, bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure, Vector.getElem_ofFn]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:275:4: 'generalize_proofs at *' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:268:4: 'simp +decide [ vector_set_forIn_range, hj' ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:268:4: Try this:\n  [apply] simp +decide only [Nat.reducePow, bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure, Vector.getElem_ofFn]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:276:4: 'convert h_foldl _ _' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:268:4: 'simp +decide [ vector_set_forIn_range, hj' ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:268:4: Try this:\n  [apply] simp +decide only [Nat.reducePow, bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure, Vector.getElem_ofFn]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:278:4: 'exact List.attach (List.range' 0 K_pred) |> List.map fun x => ⟨x.val, by grind +ring⟩' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:268:4: 'simp +decide [ vector_set_forIn_range, hj' ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:268:4: Try this:\n  [apply] simp +decide only [Nat.reducePow, bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure, Vector.getElem_ofFn]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:280:14: 'generalize_proofs at *' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:268:4: 'simp +decide [ vector_set_forIn_range, hj' ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:268:4: Try this:\n  [apply] simp +decide only [Nat.reducePow, bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure, Vector.getElem_ofFn]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:280:14: 'generalize_proofs at *' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: 'simp +decide [ Vector.getElem_set, List.foldl ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: Try this:\n  [apply] simp +decide only [Nat.reducePow, bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure, Vector.getElem_ofFn, add_lt_iff_neg_left, not_lt_zero, ↓reduceDIte, add_tsub_cancel_left]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:288:4: 'have h_foldl :\n  ∀ (l : List (Fin K_pred)),\n    (∀ x ∈ l, x.val < K_pred) →\n      (List.foldl\n            (fun (b : Vector F (2 * K_pred)) (x : Fin K_pred) =>\n              (b.set x.val (E'[x.val] + OMEGA ^ x.val * O'[x.val]) (by linarith [Fin.is_lt x])).set (x.val + K_pred)\n                (E'[x.val] - OMEGA ^ x.val * O'[x.val]) (by linarith [Fin.is_lt x]))\n            (Vector.replicate (2 * K_pred) 0) l)[K_pred + m] =\n        if m ∈ List.map (fun x => x.val) l then E'[m] - OMEGA ^ m * O'[m] else 0 :=\n  by intro l hl; induction' l using List.reverseRecOn with l ih <;> simp_all +decide [List.foldl]; grind;' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: 'simp +decide [ Vector.getElem_set, List.foldl ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: Try this:\n  [apply] simp +decide only [Nat.reducePow, bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure, Vector.getElem_ofFn, add_lt_iff_neg_left, not_lt_zero, ↓reduceDIte, add_tsub_cancel_left]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:293:4: 'convert h_foldl _ _ using 1' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: 'simp +decide [ Vector.getElem_set, List.foldl ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: Try this:\n  [apply] simp +decide only [Nat.reducePow, bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure, Vector.getElem_ofFn, add_lt_iff_neg_left, not_lt_zero, ↓reduceDIte, add_tsub_cancel_left]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:296:4: 'exact List.attach (List.range' 0 K_pred) |> List.map fun x => ⟨x.val, by grind⟩' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: 'simp +decide [ Vector.getElem_set, List.foldl ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: Try this:\n  [apply] simp +decide only [Nat.reducePow, bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure, Vector.getElem_ofFn, add_lt_iff_neg_left, not_lt_zero, ↓reduceDIte, add_tsub_cancel_left]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:298:14: 'generalize_proofs at *' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: 'simp +decide [ Vector.getElem_set, List.foldl ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: Try this:\n  [apply] simp +decide only [Nat.reducePow, bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure, Vector.getElem_ofFn, add_lt_iff_neg_left, not_lt_zero, ↓reduceDIte, add_tsub_cancel_left]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:298:14: 'generalize_proofs at *' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: 'simp +decide [ Vector.getElem_set, List.foldl ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: Try this:\n  [apply] simp +decide only [Nat.reducePow, bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure, Vector.getElem_ofFn, add_lt_iff_neg_left, not_lt_zero, ↓reduceDIte, add_tsub_cancel_left]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:298:14: 'generalize_proofs at *' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: 'simp +decide [ Vector.getElem_set, List.foldl ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: Try this:\n  [apply] simp +decide only [Nat.reducePow, bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure, Vector.getElem_ofFn, add_lt_iff_neg_left, not_lt_zero, ↓reduceDIte, add_tsub_cancel_left]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:300:6: 'congr! 2' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: 'simp +decide [ Vector.getElem_set, List.foldl ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: Try this:\n  [apply] simp +decide only [Nat.reducePow, bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure, Vector.getElem_ofFn, add_lt_iff_neg_left, not_lt_zero, ↓reduceDIte, add_tsub_cancel_left]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:301:6: 'induction' (List.range' 0 K_pred).attach using List.reverseRecOn with x xs ih' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: 'simp +decide [ Vector.getElem_set, List.foldl ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:287:4: Try this:\n  [apply] simp +decide only [Nat.reducePow, bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure, Vector.getElem_ofFn, add_lt_iff_neg_left, not_lt_zero, ↓reduceDIte, add_tsub_cancel_left]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:303:6: 'exact fun h => False.elim <| by linarith;' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:278:4: The following tactic starts with 3 goals and ends with 2 goals, 2 of which are not operated on.\n  exact List.attach (List.range' 0 K_pred) |> List.map fun x => ⟨x.val, by grind +ring⟩\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:296:4: The following tactic starts with 4 goals and ends with 3 goals, 3 of which are not operated on.\n  exact List.attach (List.range' 0 K_pred) |> List.map fun x => ⟨x.val, by grind⟩\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:269:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:271:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:273:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:288:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:290:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:291:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:301:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:315:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:318:4: 'simp +decide [ ← ih, t_table_ret_eq ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:318:4: Try this:\n  [apply] simp +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range', Std.Legacy.Range.size,\n    tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_yield_eq_foldlM, bind_pure, ret_bind,\n    List.forIn'_pure_yield_eq_foldl, Id.run_pure]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:319:4: 'convert ret_foldlM_TimeM _ _ _ using 1' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:347:19: This simp argument is unused:\n  ← pow_succ'\n\nHint: Omit it from the simp argument list.\n  simp +decide [̵ ̵←̵ ̵p̵o̵w̵_̵s̵u̵c̵c̵'̵,̵ ̵i̵h̵ ̵]̵[̲i̲h̲]̲\n\nNote: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:332:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:339:4: 'convert butterfly_loop_eq_ofFn _ _ _ using 1' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:341:4: 'exact F' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:342:4: 'exact inferInstance' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:343:4: 'exact 2 ^ k' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:344:4: 'exact Vector.ofFn fun j => ∑ i : Fin (2 ^ k), x[2 * i.val] * (OMEGA ^ 2) ^ (i.val * j.val)' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:345:4: 'exact Vector.ofFn fun j => ∑ i : Fin (2 ^ k), x[2 * i.val + 1] * (OMEGA ^ 2) ^ (i.val * j.val)' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:346:4: 'exact OMEGA' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:348:4: 'congr! 2' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:350:6: 'congr! 3' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:352:8: 'congr! 2' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:353:10: 'unfold dft' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:354:10: 'unfold dft' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:356:8: 'unfold dft' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:357:6: 'rw [pow_succ']' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:359:6: 'congr! 1' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:360:8: 'rw [pow_succ']' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:361:8: 'rename_i i j hij' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:363:10: 'convert dft_split_sum x OMEGA ⟨j, by linarith⟩ using 1' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:364:10: 'congr! 2' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:366:10: 'convert dft_split_sum_high x OMEGA h_OMEGA i _ using 1' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:367:12: 'rw [show (i : ℕ) % 2 ^ k = (j : ℕ) - 2 ^ k from ?_]' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:368:12: 'rw [Nat.mod_eq_sub_mod]' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:338:4: 'simp [fft_pure, dft]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:369:14: 'rw [Nat.mod_eq_of_lt]' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:341:4: The following tactic starts with 7 goals and ends with 6 goals, 6 of which are not operated on.\n  exact F\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:342:4: The following tactic starts with 6 goals and ends with 5 goals, 5 of which are not operated on.\n  exact inferInstance\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:343:4: The following tactic starts with 5 goals and ends with 4 goals, 4 of which are not operated on.\n  exact 2 ^ k\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:344:4: The following tactic starts with 4 goals and ends with 3 goals, 3 of which are not operated on.\n  exact Vector.ofFn fun j => ∑ i : Fin (2 ^ k), x[2 * i.val] * (OMEGA ^ 2) ^ (i.val * j.val)\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:345:4: The following tactic starts with 3 goals and ends with 2 goals, 2 of which are not operated on.\n  exact Vector.ofFn fun j => ∑ i : Fin (2 ^ k), x[2 * i.val + 1] * (OMEGA ^ 2) ^ (i.val * j.val)\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:346:4: The following tactic starts with 2 goals and ends with 1 goal, 1 of which is not operated on.\n  exact OMEGA\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:333:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:344:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:345:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:406:31: Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:401:2: The following tactic starts with 5 goals and ends with 4 goals, 4 of which are not operated on.\n  exact ℂ\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:402:2: The following tactic starts with 4 goals and ends with 3 goals, 3 of which are not operated on.\n  exact inferInstance\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:403:2: The following tactic starts with 3 goals and ends with 2 goals, 2 of which are not operated on.\n  exact Complex.exp (2 * Real.pi * Complex.I / 2 ^ k)\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:404:54: The following tactic starts with 2 goals and ends with 1 goal, 1 of which is not operated on.\n  norm_num\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:415:4: Try this:\n  [apply] exact fft_eq_dft x (ZETA k) (ZETA_prim k)",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:424:49: Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:439:69: This simp argument is unused:\n  h_exp\n\nHint: Omit it from the simp argument list.\n  simp +decide ̵[̵ ̵h̵_̵e̵x̵p̵ ̵]̵\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:443:42: This simp argument is unused:\n  ZMod.natCast_zmod_val\n\nHint: Omit it from the simp argument list.\n  simp +decide ̵[̵ ̵Z̵M̵o̵d̵.̵n̵a̵t̵C̵a̵s̵t̵_̵z̵m̵o̵d̵_̵v̵a̵l̵ ̵]̵\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:439:2: The `refine'` tactic is discouraged: please strongly consider using `refine` or `apply` instead.\n\nNote: This linter can be disabled with `set_option linter.style.refine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:418:2: 'simp +decide [ convert_vector_to_zmod, dft ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:418:2: Try this:\n  [apply] simp +decide only [smul_eq_mul]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:420:2: 'have h_exp : ∀ j : ZMod (2 ^ k), (ZETA k) ^ (j.val * m.val) = ZMod.stdAddChar (-(j * m)) :=\n  by\n  intro j\n  have h_exp : (ZETA k) ^ (j.val * m.val) = Complex.exp (-(2 * Real.pi * Complex.I) * (j.val * m.val) / (2 ^ k : ℂ)) :=\n    by rw [ZETA]; rw [← Complex.exp_nat_mul]; push_cast; ring;\n  have h_exp : ZMod.stdAddChar (-(j * m)) = Complex.exp (2 * Real.pi * Complex.I * (-(j * m)).val / (2 ^ k : ℂ)) := by\n    convert ZMod.stdAddChar_apply (-(j * m)) using 1; rw [ZMod.toCircle_apply]; norm_cast;\n    -- Since $-(j * m).val \\equiv -(j.val * m.val) \\pmod{2^k}$, we can conclude that the exponents are equal.\n    \n  have h_exp_eq : (-(j * m)).val ≡ -(j.val * m.val) [ZMOD 2 ^ k] := by erw [← ZMod.intCast_eq_intCast_iff]; aesop;\n  rw [h_exp, ‹ZETA k ^ (j.val * m.val) = Complex.exp _›]; rw [Complex.exp_eq_exp_iff_exists_int];\n  obtain ⟨n, hn⟩ := h_exp_eq.symm.dvd; use -n; field_simp; norm_cast at *; grind;' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:418:2: 'simp +decide [ convert_vector_to_zmod, dft ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:418:2: Try this:\n  [apply] simp +decide only [smul_eq_mul]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:439:2: 'refine' Finset.sum_bij (fun j _ => j) _ _ _ _' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:418:2: 'simp +decide [ convert_vector_to_zmod, dft ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:418:2: Try this:\n  [apply] simp +decide only [smul_eq_mul]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:441:4: 'exact fun a₁ a₂ h => Nat.mod_eq_of_lt a₁.2 ▸ Nat.mod_eq_of_lt a₂.2 ▸ h' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:418:2: 'simp +decide [ convert_vector_to_zmod, dft ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:418:2: Try this:\n  [apply] simp +decide only [smul_eq_mul]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:442:4: 'intro b' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:418:2: 'simp +decide [ convert_vector_to_zmod, dft ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:418:2: Try this:\n  [apply] simp +decide only [smul_eq_mul]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:442:13: 'use ⟨b.val, by convert b.val_lt⟩' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:418:2: 'simp +decide [ convert_vector_to_zmod, dft ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:418:2: Try this:\n  [apply] simp +decide only [smul_eq_mul]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:444:4: 'intro a' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:419:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:422:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:425:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:429:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:460:43: Try this:\n  [apply] ring_nf!\n  \n  The `ring!` tactic failed to close the goal. Use `ring_nf!` to obtain a normal form.\n    \n  Note that `ring!` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:459:48: This simp argument is unused:\n  Nat.pow_succ'\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵N̵a̵t̵.̵p̵o̵w̵_̵s̵u̵c̵c̵'̵,̵ ̵N̵a̵t̵.̵m̵u̵l̵_̵s̵u̵c̵c̵,̵ ̵L̵i̵s̵t̵.̵r̵a̵n̵g̵e̵'̵_̵c̵o̵n̵c̵a̵t̵ ̵]̵[̲N̲a̲t̲.̲m̲u̲l̲_̲s̲u̲c̲c̲,̲ ̲L̲i̲s̲t̲.̲r̲a̲n̲g̲e̲'̲_̲c̲o̲n̲c̲a̲t̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:459:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:461:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:459:29: 'simp_all +decide [ Nat.pow_succ', Nat.mul_succ, List.range'_concat ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:459:29: Try this:\n  [apply] simp_all +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_yield_eq_foldlM, time_bind,\n    time_tick, time_map]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:460:2: 'convert congr_arg (· + 2) ih using 1' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:459:29: 'simp_all +decide [ Nat.pow_succ', Nat.mul_succ, List.range'_concat ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:459:29: Try this:\n  [apply] simp_all +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn'_eq_forIn'_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn'_yield_eq_foldlM, time_bind,\n    time_tick, time_map]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:461:2: 'induction' (List.range' 0 n).attach using List.reverseRecOn with x xs ih' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:461:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:478:159: This simp argument is unused:\n  Nat.pow_succ'\n\nHint: Omit it from the simp argument list.\n  simp +arith +decide [̵ ̵*̵,̵ ̵N̵a̵t̵.̵p̵o̵w̵_̵s̵u̵c̵c̵'̵ ̵]̵[̲*̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:472:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:480:8: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:481:6: The `refine'` tactic is discouraged: please strongly consider using `refine` or `apply` instead.\n\nNote: This linter can be disabled with `set_option linter.style.refine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:475:4: 'simp [fft, tick]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:476:4: 'rw [show\n    (List.range' 0 (2 ^ k)).attach = List.map (fun i : Fin (2 ^ k) => ⟨i, by simp +decide⟩) (List.finRange (2 ^ k)) from\n    ?_]' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:475:4: 'simp [fft, tick]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:477:6: 'rw [show (t_table (2 ^ k) OMEGA).time = 2 * 2 ^ k + 1 from t_table_time_eq _ _]' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:475:4: 'simp [fft, tick]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:478:6: 'rw [show (List.foldlM _ _ _ : TimeM ℕ _).time = List.sum (List.map (fun _ => 1) (List.finRange (2 ^ k))) from\n    ?_]' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:475:4: 'simp [fft, tick]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:480:8: 'induction' (List.finRange (2 ^ k)) using List.reverseRecOn with l ih' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:475:4: 'simp [fft, tick]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:481:6: 'refine' List.ext_get _ _' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:478:134: The following tactic starts with 2 goals and ends with 2 goals, 1 of which is not operated on.\n  simp +arith +decide [*, Nat.pow_succ']\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:476:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:477:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:478:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:480:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:487:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:495:45: This simp argument is unused:\n  Nat.pow_succ'\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵N̵a̵t̵.̵p̵o̵w̵_̵s̵u̵c̵c̵'̵,̵ ̵m̵u̵l̵_̵a̵s̵s̵o̵c̵ ̵]̵[̲m̲u̲l̲_̲a̲s̲s̲o̲c̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:495:60: This simp argument is unused:\n  mul_assoc\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵N̵a̵t̵.̵p̵o̵w̵_̵s̵u̵c̵c̵'̵,̵ ̵m̵u̵l̵_̵a̵s̵s̵o̵c̵ ̵]̵[̲N̲a̲t̲.̲p̲o̲w̲_̲s̲u̲c̲c̲'̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:494:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:495:26: 'simp_all +decide [ Nat.pow_succ', mul_assoc ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:496:2: 'rw [show fft_time_formula (k + 1) = 2 * fft_time_formula k + 7 * 2 ^ k + 3 by rfl]' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:496:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/fft_time_draft.lean:507:2: The `show` tactic should only be used to indicate intermediate goal states for readability.\nHowever, this tactic invocation changed the goal. Please use `change` instead for these purposes.\n\nNote: This linter can be disabled with `set_option linter.style.show false`",
+   "level": "warning"}],
+ "inputs":
+ [["fast_verified_mul.fft_time_draft:deps",
+   [["deps",
+     [["fast_verified_mul/fast_verified_mul:extraDep",
+       [["@fast_verified_mul:extraDep", "00000000000006bb"]]],
+      ["imports",
+       [["Mathlib transitive imports (legacy)", "abc115b3312ed7dd"],
+        ["Mathlib:importAllArts", "ae402e6d874ae9a0"],
+        ["Cslib.Algorithms.Lean.TimeM transitive imports (legacy)",
+         "df786a6867cc629f"],
+        ["Cslib.Algorithms.Lean.TimeM:importAllArts", "b80b7377045f24b1"]]]]],
+    ["libs",
+     [["import dynlibs", "00000000000006bb"],
+      ["package external libraries", "00000000000006bb"],
+      ["module dynlibs", "00000000000006bb"],
+      ["module plugins", "00000000000006bb"]]]]],
+  ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
+   "2c8d2623007dfc36"],
+  ["/home/n/Documents/github/verified_mul_dcv/fast_verified_mul/fft_time_draft.lean",
+   "a102ce5ea441501e"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-Dweak.linter.mathlibStandardSet=true", "8a155799906f2b42"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: fast_verified_mul.fft_time_draft", "4dcf3caa7740bdc7"],
+  ["Package.id?: (some fast_verified_mul)", "69bf6ad753670a8e"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "4881fac038c68991"}

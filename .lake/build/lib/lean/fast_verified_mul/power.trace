@@ -1,0 +1,68 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["7c8aba2fc7f52b61.olean"],
+  "m": false,
+  "i": "db2177131c177340.ilean",
+  "c": "52581bd9b1b233f8.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/home/n/Documents/github/verified_mul_dcv/.lake/packages/Cli/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/batteries/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/Qq/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/aesop/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/importGraph/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/plausible/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/mathlib/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/cslib/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/build/lib/lean /home/n/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean /home/n/Documents/github/verified_mul_dcv/fast_verified_mul/power.lean -o /home/n/Documents/github/verified_mul_dcv/.lake/build/lib/lean/fast_verified_mul/power.olean -i /home/n/Documents/github/verified_mul_dcv/.lake/build/lib/lean/fast_verified_mul/power.ilean -c /home/n/Documents/github/verified_mul_dcv/.lake/build/ir/fast_verified_mul/power.c --setup /home/n/Documents/github/verified_mul_dcv/.lake/build/ir/fast_verified_mul/power.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "fast_verified_mul/power.lean:35:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/power.lean:37:54: 'simp_all +decide [ pow_succ', pow_mul ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/power.lean:37:54: Try this:\n  [apply] simp_all +decide only [mul_eq_zero, OfNat.ofNat_ne_zero, false_or, even_two, Even.mul_right, ↓reduceIte,\n    ne_eq, not_false_eq_true, mul_div_cancel_left₀]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/power.lean:38:4: 'rcases k with (_ | k)' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/power.lean:37:54: 'simp_all +decide [ pow_succ', pow_mul ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/power.lean:37:54: Try this:\n  [apply] simp_all +decide only [Nat.add_eq_zero_iff, mul_eq_zero, OfNat.ofNat_ne_zero, false_or, one_ne_zero,\n    and_false, ↓reduceIte, Nat.not_even_bit1, add_tsub_cancel_right, ne_eq, not_false_eq_true, mul_div_cancel_left₀]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/power.lean:40:4: 'exact ih _ (by linarith) _' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/power.lean:48:16: 'simp_all +decide [ int_exp ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/power.lean:48:16: Try this:\n  [apply] simp_all +decide only [zpow_negSucc]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/power.lean:51:6: 'rw [nat_exp_correct, inv_pow]' uses '⊢'!",
+   "level": "info"}],
+ "inputs":
+ [["fast_verified_mul.power:deps",
+   [["deps",
+     [["fast_verified_mul/fast_verified_mul:extraDep",
+       [["@fast_verified_mul:extraDep", "00000000000006bb"]]],
+      ["imports",
+       [["Mathlib transitive imports (legacy)", "abc115b3312ed7dd"],
+        ["Mathlib:importAllArts", "ae402e6d874ae9a0"]]]]],
+    ["libs",
+     [["import dynlibs", "00000000000006bb"],
+      ["package external libraries", "00000000000006bb"],
+      ["module dynlibs", "00000000000006bb"],
+      ["module plugins", "00000000000006bb"]]]]],
+  ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
+   "2c8d2623007dfc36"],
+  ["/home/n/Documents/github/verified_mul_dcv/fast_verified_mul/power.lean",
+   "141af349f62260e5"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-Dweak.linter.mathlibStandardSet=true", "8a155799906f2b42"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: fast_verified_mul.power", "9e14317cc895ba9d"],
+  ["Package.id?: (some fast_verified_mul)", "69bf6ad753670a8e"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "9214542fda91716e"}

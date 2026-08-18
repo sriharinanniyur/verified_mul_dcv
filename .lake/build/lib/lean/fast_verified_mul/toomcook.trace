@@ -1,0 +1,144 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["82359c0cb34d3ae4.olean"],
+  "m": false,
+  "i": "572dbbb92d87b31e.ilean",
+  "c": "5f270e76ed584193.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/home/n/Documents/github/verified_mul_dcv/.lake/packages/Cli/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/batteries/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/Qq/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/aesop/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/importGraph/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/plausible/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/mathlib/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/cslib/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/build/lib/lean /home/n/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean /home/n/Documents/github/verified_mul_dcv/fast_verified_mul/toomcook.lean -o /home/n/Documents/github/verified_mul_dcv/.lake/build/lib/lean/fast_verified_mul/toomcook.olean -i /home/n/Documents/github/verified_mul_dcv/.lake/build/lib/lean/fast_verified_mul/toomcook.ilean -c /home/n/Documents/github/verified_mul_dcv/.lake/build/ir/fast_verified_mul/toomcook.c --setup /home/n/Documents/github/verified_mul_dcv/.lake/build/ir/fast_verified_mul/toomcook.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:6:0: Unscoped option maxHeartbeats is not allowed:\nPlease scope this to individual declarations, as in\n```\nset_option maxHeartbeats in\n-- comment explaining why this is necessary\nexample : ... := ...\n```\n\nNote: This linter can be disabled with `set_option linter.style.setOption false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:8:0: Unscoped option synthInstance.maxHeartbeats is not allowed:\nPlease scope this to individual declarations, as in\n```\nset_option synthInstance.maxHeartbeats in\n-- comment explaining why this is necessary\nexample : ... := ...\n```\n\nNote: This linter can be disabled with `set_option linter.style.setOption false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:38:62: This simp argument is unused:\n  Int.natAbs_mul\n\nHint: Omit it from the simp argument list.\n  simp_all ̵[̵I̵n̵t̵.̵n̵a̵t̵A̵b̵s̵_̵m̵u̵l̵]̵\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:70:0: { toArray := #[6, 5, 4], size_toArray := _ }",
+   "level": "info"},
+  {"message": "fast_verified_mul/toomcook.lean:71:0: 9007506", "level": "info"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:161:8: Try this:\n  [apply] exact Eq.symm (Nat.add_zero (BASE.digits a.natAbs).length)",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:227:8: Try this:\n  [apply] (expose_names; exact Nat.le_length_digits_le BASE a.natAbs b.natAbs h)",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:236:12: Try this:\n  [apply] (expose_names; exact Nat.le_length_digits_le BASE b.natAbs a.natAbs h)",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:237:12: Try this:\n  [apply] (expose_names; exact Nat.le_length_digits_le BASE b.natAbs a.natAbs h)",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:238:12: Try this:\n  [apply] (expose_names; exact Nat.le_length_digits_le BASE b.natAbs a.natAbs h)",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:239:12: Try this:\n  [apply] (expose_names; exact Nat.le_length_digits_le BASE b.natAbs a.natAbs h)",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:223:80: This simp argument is unused:\n  Int.natAbs_abs\n\nHint: Omit it from the simp argument list.\n  simp_all +decide ̵[̵ ̵I̵n̵t̵.̵n̵a̵t̵A̵b̵s̵_̵a̵b̵s̵ ̵]̵\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:234:55: This simp argument is unused:\n  abs_of_nonneg\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵a̵b̵s̵_̵o̵f̵_̵n̵o̵n̵n̵e̵g̵,̵ ̵d̵i̵g̵i̵t̵s̵ ̵]̵[̲d̲i̲g̲i̲t̲s̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:281:162: Try this:\n  [apply] ring_nf!\n  \n  The `ring!` tactic failed to close the goal. Use `ring_nf!` to obtain a normal form.\n    \n  Note that `ring!` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:300:78: Try this:\n  [apply] ring_nf!\n  \n  The `ring!` tactic failed to close the goal. Use `ring_nf!` to obtain a normal form.\n    \n  Note that `ring!` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:274:96: This simp argument is unused:\n  Nat.log_eq_iff\n\nHint: Omit it from the simp argument list.\n  simp_all +decide ̵[̵ ̵N̵a̵t̵.̵l̵o̵g̵_̵e̵q̵_̵i̵f̵f̵ ̵]̵\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:296:129: This simp argument is unused:\n  mul_assoc\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵m̵u̵l̵_̵c̵o̵m̵m̵,̵ ̵m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵ ̵]̵[̲m̲u̲l̲_̲c̲o̲m̲m̲,̲\n  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲m̲u̲l̲_̲l̲e̲f̲t̲_̲c̲o̲m̲m̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:308:3: unused variable `h_base`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:379:162: Try this:\n  [apply] ring_nf!\n  \n  The `ring!` tactic failed to close the goal. Use `ring_nf!` to obtain a normal form.\n    \n  Note that `ring!` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:398:78: Try this:\n  [apply] ring_nf!\n  \n  The `ring!` tactic failed to close the goal. Use `ring_nf!` to obtain a normal form.\n    \n  Note that `ring!` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:372:96: This simp argument is unused:\n  Nat.log_eq_iff\n\nHint: Omit it from the simp argument list.\n  simp_all +decide ̵[̵ ̵N̵a̵t̵.̵l̵o̵g̵_̵e̵q̵_̵i̵f̵f̵ ̵]̵\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:394:129: This simp argument is unused:\n  mul_assoc\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵m̵u̵l̵_̵c̵o̵m̵m̵,̵ ̵m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵ ̵]̵[̲m̲u̲l̲_̲c̲o̲m̲m̲,̲\n  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲m̲u̲l̲_̲l̲e̲f̲t̲_̲c̲o̲m̲m̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:410:63: This simp argument is unused:\n  Nat.pow_succ'\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵N̵a̵t̵.̵p̵o̵w̵_̵s̵u̵c̵c̵'̵,̵ ̵m̵u̵l̵_̵a̵s̵s̵o̵c̵ ̵]̵[̲m̲u̲l̲_̲a̲s̲s̲o̲c̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:410:78: This simp argument is unused:\n  mul_assoc\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵N̵a̵t̵.̵p̵o̵w̵_̵s̵u̵c̵c̵'̵,̵ ̵m̵u̵l̵_̵a̵s̵s̵o̵c̵ ̵]̵[̲N̲a̲t̲.̲p̲o̲w̲_̲s̲u̲c̲c̲'̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:444:22: This simp argument is unused:\n  Vector.toList\n\nHint: Omit it from the simp argument list.\n  simp [Vector.get,̵ ̵V̵e̵c̵t̵o̵r̵.̵t̵o̵L̵i̵s̵t̵]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:503:5: unused variable `h`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:548:184: Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:550:89: Try this:\n  [apply] ring_nf!\n  \n  The `ring!` tactic failed to close the goal. Use `ring_nf!` to obtain a normal form.\n    \n  Note that `ring!` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:541:3: unused variable `hBASE`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:547:86: This simp argument is unused:\n  Finset.sum_mul _ _ _\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵m̵u̵l̵ ̵_̵ ̵_̵ ̵_̵,̵ ̵m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵[̲m̲u̲l̲_̲a̲s̲s̲o̲c̲,̲\n  ̲  ̲ ̲ ̲ ̲ ̲mul_comm, m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵ ̵]̵m̲u̲l̲_̲l̲e̲f̲t̲_̲c̲o̲m̲m̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:547:129: This simp argument is unused:\n  mul_left_comm\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵m̵u̵l̵[̲F̲i̲n̲s̲e̲t̲.̲s̲u̲m̲_̲m̲u̲l̲\n  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲_ _ _,\n  ̲  ̲ ̲ ̲ ̲ ̲mul_assoc, m̵u̵l̵_̵c̵o̵m̵m̵,̵ ̵m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵ ̵]̵m̲u̲l̲_̲c̲o̲m̲m̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:568:105: Try this:\n  [apply] ring_nf!\n  \n  The `ring!` tactic failed to close the goal. Use `ring_nf!` to obtain a normal form.\n    \n  Note that `ring!` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:568:74: This simp argument is unused:\n  Finset.sum_mul\n\nHint: Omit it from the simp argument list.\n  simp +decide [̵ ̵m̵u̵l̵_̵c̵o̵m̵m̵,̵[̲m̲u̲l̲_̲c̲o̲m̲m̲,̲ Finset.mul_sum _ _ _, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵m̵u̵l̵,̵ ̵V̵e̵c̵t̵o̵r̵.̵g̵e̵t̵ ̵]̵V̲e̲c̲t̲o̲r̲.̲g̲e̲t̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:579:86: This simp argument is unused:\n  Polynomial.eval_smul\n\nHint: Omit it from the simp argument list.\n  simp +decide [̵ ̵P̵o̵l̵y̵n̵o̵m̵i̵a̵l̵.̵e̵v̵a̵l̵_̵f̵i̵n̵s̵e̵t̵_̵s̵u̵m̵,̵ ̵P̵o̵l̵y̵n̵o̵m̵i̵a̵l̵.̵e̵v̵a̵l̵_̵s̵m̵u̵l̵,̵[̲P̲o̲l̲y̲n̲o̲m̲i̲a̲l̲.̲e̲v̲a̲l̲_̲f̲i̲n̲s̲e̲t̲_̲s̲u̲m̲,̲\n  ̲  ̲ ̲ ̲ ̲ ̲Finset.mul_sum _ _ _̵ ̵]̵_̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:579:108: This simp argument is unused:\n  Finset.mul_sum _ _ _\n\nHint: Omit it from the simp argument list.\n  simp +decide [̵ ̵P̵o̵l̵y̵n̵o̵m̵i̵a̵l̵.̵e̵v̵a̵l̵_̵f̵i̵n̵s̵e̵t̵_̵s̵u̵m̵,̵ ̵P̵o̵l̵y̵n̵o̵m̵i̵a̵l̵.̵e̵v̵a̵l̵_̵s̵m̵u̵l̵,̵ ̵F̵i̵n̵s̵e̵t̵.̵m̵u̵l̵_̵s̵u̵m̵ ̵_̵ ̵_̵ ̵_̵ ̵]̵[̲P̲o̲l̲y̲n̲o̲m̲i̲a̲l̲.̲e̲v̲a̲l̲_̲f̲i̲n̲s̲e̲t̲_̲s̲u̲m̲,̲\n  ̲ ̲ ̲ ̲ ̲ ̲ ̲P̲o̲l̲y̲n̲o̲m̲i̲a̲l̲.̲e̲v̲a̲l̲_̲s̲m̲u̲l̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/toomcook.lean:658:0: toomcook.induct (BASE KA KB : ℕ) (h_base : 1 < BASE) (h_k : 1 < KA ∧ 1 < KB) (POINTS : Vector ℤ (KA + KB - 1))\n  (h_inj : Function.Injective POINTS.get) (motive : ℤ → ℤ → Prop)\n  (case1 : ∀ (a b : ℤ), ↑(toomcook_P BASE a b) ≤ toomcook_THETA BASE KA KB POINTS → motive a b)\n  (case2 :\n    ∀ (a b : ℤ),\n      ¬↑(toomcook_P BASE a b) ≤ toomcook_THETA BASE KA KB POINTS →\n        have a_abs := a.natAbs;\n        have b_abs := b.natAbs;\n        have pcoeffs := toomcook_split KA KB KA BASE a_abs b_abs a_abs;\n        have qcoeffs := toomcook_split KA KB KB BASE a_abs b_abs b_abs;\n        have p_vec := fun i ↦ eval_vec_as_poly pcoeffs (POINTS.get i);\n        have q_vec := fun i ↦ eval_vec_as_poly qcoeffs (POINTS.get i);\n        Xor' (a < 0) (b < 0) →\n          (∀ (i : Fin (KA + KB - 1)),\n              have aa := p_vec i;\n              have bb := q_vec i;\n              motive ↑aa.natAbs ↑bb.natAbs) →\n            motive a b)\n  (case3 :\n    ∀ (a b : ℤ),\n      ¬↑(toomcook_P BASE a b) ≤ toomcook_THETA BASE KA KB POINTS →\n        have a_abs := a.natAbs;\n        have b_abs := b.natAbs;\n        have pcoeffs := toomcook_split KA KB KA BASE a_abs b_abs a_abs;\n        have qcoeffs := toomcook_split KA KB KB BASE a_abs b_abs b_abs;\n        have p_vec := fun i ↦ eval_vec_as_poly pcoeffs (POINTS.get i);\n        have q_vec := fun i ↦ eval_vec_as_poly qcoeffs (POINTS.get i);\n        ¬Xor' (a < 0) (b < 0) →\n          (∀ (i : Fin (KA + KB - 1)),\n              have aa := p_vec i;\n              have bb := q_vec i;\n              motive ↑aa.natAbs ↑bb.natAbs) →\n            motive a b)\n  (a b : ℤ) : motive a b",
+   "level": "info"}],
+ "inputs":
+ [["fast_verified_mul.toomcook:deps",
+   [["deps",
+     [["fast_verified_mul/fast_verified_mul:extraDep",
+       [["@fast_verified_mul:extraDep", "00000000000006bb"]]],
+      ["imports",
+       [["Mathlib transitive imports (legacy)", "abc115b3312ed7dd"],
+        ["Mathlib:importAllArts", "ae402e6d874ae9a0"]]]]],
+    ["libs",
+     [["import dynlibs", "00000000000006bb"],
+      ["package external libraries", "00000000000006bb"],
+      ["module dynlibs", "00000000000006bb"],
+      ["module plugins", "00000000000006bb"]]]]],
+  ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
+   "2c8d2623007dfc36"],
+  ["/home/n/Documents/github/verified_mul_dcv/fast_verified_mul/toomcook.lean",
+   "639b8d739b1574c0"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-Dweak.linter.mathlibStandardSet=true", "8a155799906f2b42"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: fast_verified_mul.toomcook", "099f45bd0e66a5fd"],
+  ["Package.id?: (some fast_verified_mul)", "69bf6ad753670a8e"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "f586cb04cc4c208c"}

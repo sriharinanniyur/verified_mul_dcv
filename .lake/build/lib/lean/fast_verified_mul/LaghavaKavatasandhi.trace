@@ -1,0 +1,500 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["532247c701c90cad.olean"],
+  "m": false,
+  "i": "80ca5c19dc1f5856.ilean",
+  "c": "021128284d4c52be.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/home/n/Documents/github/verified_mul_dcv/.lake/packages/Cli/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/batteries/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/Qq/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/aesop/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/importGraph/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/plausible/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/mathlib/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/packages/cslib/.lake/build/lib/lean:/home/n/Documents/github/verified_mul_dcv/.lake/build/lib/lean /home/n/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean /home/n/Documents/github/verified_mul_dcv/fast_verified_mul/LaghavaKavatasandhi.lean -o /home/n/Documents/github/verified_mul_dcv/.lake/build/lib/lean/fast_verified_mul/LaghavaKavatasandhi.olean -i /home/n/Documents/github/verified_mul_dcv/.lake/build/lib/lean/fast_verified_mul/LaghavaKavatasandhi.ilean -c /home/n/Documents/github/verified_mul_dcv/.lake/build/ir/fast_verified_mul/LaghavaKavatasandhi.c --setup /home/n/Documents/github/verified_mul_dcv/.lake/build/ir/fast_verified_mul/LaghavaKavatasandhi.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:5:0: Unscoped option maxHeartbeats is not allowed:\nPlease scope this to individual declarations, as in\n```\nset_option maxHeartbeats in\n-- comment explaining why this is necessary\nexample : ... := ...\n```\n\nNote: This linter can be disabled with `set_option linter.style.setOption false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:19:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:19:47: 'simp_all +decide [ List.range'_concat ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:19:47: Try this:\n  [apply] simp_all +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn_eq_forIn_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn_pure_yield_eq_foldl, bind_pure,\n    Id.run_pure]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:20:2: 'exact hstep _ le_rfl _ (ih _ h0 fun i hi => hstep _ (Nat.le_of_lt hi))' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:49:118: Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:41:4: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:46:8: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:37:2: The following tactic starts with 5 goals and ends with 4 goals, 4 of which are not operated on.\n  exact fun i s => s = (List.foldl (fun x y => body y x) init (List.range i))\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:43:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:44:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:48:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:49:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:57:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:85:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:87:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:124:1: unused variable `hbase`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:125:1: unused variable `hsplit`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:177:5: unused variable `h`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:186:5: unused variable `h`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:196:42: unused variable `hbase`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:206:42: This simp argument is unused:\n  List.range_succ\n\nHint: Omit it from the simp argument list.\n  simp_all +decide ̵[̵ ̵L̵i̵s̵t̵.̵r̵a̵n̵g̵e̵_̵s̵u̵c̵c̵ ̵]̵\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:206:23: 'simp_all +decide [ List.range_succ ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:206:23: Try this:\n  [apply] simp_all +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn_eq_forIn_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn_pure_yield_eq_foldl, Id.run_pure]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:208:2: 'rename_i k hk' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:206:23: 'simp_all +decide [ List.range_succ ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:206:23: Try this:\n  [apply] simp_all +decide only [bind_pure_comp, map_pure, Std.Legacy.Range.forIn_eq_forIn_range',\n    Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one, List.forIn_pure_yield_eq_foldl, Id.run_pure]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:208:17: 'exact\n  Or.inl (Nat.recOn k (by norm_num) fun n ihn => by rw [List.range'_concat]; simp +decide [ihn, pow_succ])' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:208:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:249:49: unused variable `hk`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:257:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:256:2: 'simp [zeroPrefix]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:257:2: 'induction' (List.range' 0 (Min.min m W.size)) using List.reverseRecOn with _ _ ih' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:255:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:268:21: This simp argument is unused:\n  List.range'\n\nHint: Omit it from the simp argument list.\n  simp_all +decide ̵[̵ ̵L̵i̵s̵t̵.̵r̵a̵n̵g̵e̵'̵ ̵]̵\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:264:21: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:265:30: 'simp_all +decide [ List.foldl_append ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:265:30: Try this:\n  [apply] simp_all +decide only [List.foldl_append, List.foldl_cons, List.foldl_nil, List.mem_append, List.mem_cons,\n    List.not_mem_nil, or_false]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:266:6: 'rw [Array.setIfInBounds]' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:264:86: The following tactic starts with 2 goals and ends with 1 goal, 1 of which is not operated on.\n  aesop\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:263:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:278:69: 'simp +decide [ Finset.sum_ite ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:278:69: Try this:\n  [apply] simp +decide only [ite_mul, zero_mul]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:279:4: 'rcongr i' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:273:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:275:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:276:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:278:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:280:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:283:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:294:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:315:218: Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:316:148: Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:315:199: This simp argument is unused:\n  Finset.sum_mul\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵p̵o̵w̵_̵a̵d̵d̵,̵[̲p̲o̲w̲_̲a̲d̲d̲,̲\n  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲mul_assoc, mul_comm, mul_left_comm, Finset.mul_sum _ _ _̵,̵ ̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵m̵u̵l̵ ̵]̵_̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:311:4: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:309:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:315:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:316:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:326:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:325:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:348:76: This simp argument is unused:\n  Nat.sub_succ\n\nHint: Omit it from the simp argument list.\n  simp_all +decide ̵[̵ ̵N̵a̵t̵.̵s̵u̵b̵_̵s̵u̵c̵c̵ ̵]̵\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:349:39: This simp argument is unused:\n  Nat.sub_eq_iff_eq_add hj\n\nHint: Omit it from the simp argument list.\n  simp +decide ̵[̵ ̵N̵a̵t̵.̵s̵u̵b̵_̵e̵q̵_̵i̵f̵f̵_̵e̵q̵_̵a̵d̵d̵ ̵h̵j̵ ̵]̵\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:348:4: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:348:57: 'simp_all +decide [ Nat.sub_succ ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:348:57: Try this:\n  [apply] simp_all +decide only [Array.set!_eq_setIfInBounds]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:349:6: 'unfold innerLoop' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:348:57: 'simp_all +decide [ Nat.sub_succ ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:348:57: Try this:\n  [apply] simp_all +decide only [Array.set!_eq_setIfInBounds]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:351:6: 'convert ih (j + 1) _ _ (by omega) (by omega) using 1' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:348:57: 'simp_all +decide [ Nat.sub_succ ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:348:57: Try this:\n  [apply] simp_all +decide only [Array.set!_eq_setIfInBounds]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:352:6: 'rw [innerLoop]' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:345:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:346:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:365:2: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:413:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:420:29: unused variable `hm`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:442:41: This simp argument is unused:\n  Nat.sub_eq_iff_eq_add\n\nHint: Omit it from the simp argument list.\n  simp_all +decide ̵[̵ ̵N̵a̵t̵.̵s̵u̵b̵_̵e̵q̵_̵i̵f̵f̵_̵e̵q̵_̵a̵d̵d̵ ̵]̵\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:448:39: This simp argument is unused:\n  hm\n\nHint: Omit it from the simp argument list.\n  simp +decide ̵[̵ ̵h̵m̵ ̵]̵\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:449:35: This simp argument is unused:\n  hm\n\nHint: Omit it from the simp argument list.\n  simp +decide ̵[̵ ̵h̵m̵ ̵]̵\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:440:6: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:448:24: 'simp +decide [ hm ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:448:24: Try this:\n  [apply] simp +decide only [Array.set!_eq_setIfInBounds, bind_pure_comp, map_pure,\n    Std.Legacy.Range.forIn_eq_forIn_range', Std.Legacy.Range.size, tsub_zero, add_tsub_cancel_right, Nat.div_one,\n    List.forIn_pure_yield_eq_foldl, Id.run_pure]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:449:2: 'unfold innerLoop' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:484:16: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:488:20: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:484:67: 'simp_all +decide' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:484:67: Try this:\n  [apply] simp_all +decide only [List.foldl_append, List.foldl_cons, List.foldl_nil, Array.set!_eq_setIfInBounds]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:485:4: 'apply_rules [outerBody_eq_step]' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:488:71: 'simp_all +decide [ zeroPrefix_size ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:488:71: Try this:\n  [apply] simp_all +decide only [List.foldl_append, List.foldl_cons, List.foldl_nil, Array.size_setIfInBounds]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:489:8: 'rw [innerLoop_size]' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:489:32: The following tactic starts with 2 goals and ends with 1 goal, 1 of which is not operated on.\n  aesop\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:483:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:486:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:487:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:488:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:491:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:497:5: unused variable `hm`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:509:113: This simp argument is unused:\n  add_left_comm\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵a̵d̵d̵_̵c̵o̵m̵m̵,̵ ̵a̵d̵d̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵[̲a̲d̲d̲_̲c̲o̲m̲m̲,̲\n  ̲  ̲ ̲ ̲add_assoc, mul_assoc, mul_comm, mul_left_comm, p̵o̵w̵_̵a̵d̵d̵ ̵]̵p̲o̲w̲_̲a̲d̲d̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:509:160: This simp argument is unused:\n  mul_left_comm\n\nHint: Omit it from the simp argument list.\n  s̵i̵m̵p̵_̵a̵l̵l̵ ̵+̵d̵e̵c̵i̵d̵e̵ ̵[̵ ̵a̵d̵d̵_̵c̵o̵m̵m̵,̵ ̵a̵d̵d̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵ ̵a̵d̵d̵_̵a̵s̵s̵o̵c̵,̵ ̵m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵m̵u̵l̵_̵c̵o̵m̵m̵,̵ ̵m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵ ̵p̵o̵w̵_̵a̵d̵d̵ ̵]̵s̲i̲m̲p̲_̲a̲l̲l̲ ̲+̲d̲e̲c̲i̲d̲e̲ ̲[̲a̲d̲d̲_̲c̲o̲m̲m̲,̲\n  ̲ ̲ ̲ ̲ ̲a̲d̲d̲_̲l̲e̲f̲t̲_̲c̲o̲m̲m̲,̲ ̲a̲d̲d̲_̲a̲s̲s̲o̲c̲,̲ ̲m̲u̲l̲_̲a̲s̲s̲o̲c̲,̲ ̲m̲u̲l̲_̲c̲o̲m̲m̲,̲ ̲p̲o̲w̲_̲a̲d̲d̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:511:36: This simp argument is unused:\n  add_comm\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [ ̵add_c̵o̵m̵m̵,̵ ̵a̵d̵d̵_̵left_comm, add_assoc, mul_assoc, mul_comm, mul_left_comm,\n  ̲  ̲ ̲ ̲ ̲ ̲pow_add ̵]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:511:46: This simp argument is unused:\n  add_left_comm\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵a̵d̵d̵_̵c̵o̵m̵m̵,̵ ̵a̵d̵d̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵[̲a̲d̲d̲_̲c̲o̲m̲m̲,̲ add_assoc, mul_assoc, mul_comm, mul_left_comm, p̵o̵w̵_̵a̵d̵d̵ ̵]̵p̲o̲w̲_̲a̲d̲d̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:511:61: This simp argument is unused:\n  add_assoc\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵a̵d̵d̵_̵c̵o̵m̵m̵,̵[̲a̲d̲d̲_̲c̲o̲m̲m̲,̲ add_left_comm, a̵d̵d̵_̵a̵s̵s̵o̵c̵,̵ ̵mul_assoc, mul_comm, mul_left_comm,\n  ̲  ̲ ̲ ̲ ̲ ̲p̵o̵w̵_̵a̵d̵d̵ ̵]̵p̲o̲w̲_̲a̲d̲d̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:511:93: This simp argument is unused:\n  mul_left_comm\n\nHint: Omit it from the simp argument list.\n  s̵i̵m̵p̵_̵a̵l̵l̵ ̵+̵d̵e̵c̵i̵d̵e̵ ̵[̵ ̵a̵d̵d̵_̵c̵o̵m̵m̵,̵ ̵a̵d̵d̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵ ̵a̵d̵d̵_̵a̵s̵s̵o̵c̵,̵ ̵m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵m̵u̵l̵_̵c̵o̵m̵m̵,̵ ̵m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵ ̵p̵o̵w̵_̵a̵d̵d̵ ̵]̵s̲i̲m̲p̲_̲a̲l̲l̲ ̲+̲d̲e̲c̲i̲d̲e̲ ̲[̲a̲d̲d̲_̲c̲o̲m̲m̲,̲ ̲a̲d̲d̲_̲l̲e̲f̲t̲_̲c̲o̲m̲m̲,̲ ̲a̲d̲d̲_̲a̲s̲s̲o̲c̲,̲ ̲m̲u̲l̲_̲a̲s̲s̲o̲c̲,̲ ̲m̲u̲l̲_̲c̲o̲m̲m̲,̲ ̲p̲o̲w̲_̲a̲d̲d̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:512:126: This simp argument is unused:\n  add_comm\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [ ̵add_c̵o̵m̵m̵,̵ ̵a̵d̵d̵_̵left_comm,\n  ̲  ̲ ̲ ̲add_assoc, mul_assoc, mul_comm, mul_left_comm, pow_add ̵]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:512:136: This simp argument is unused:\n  add_left_comm\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵a̵d̵d̵_̵c̵o̵m̵m̵,̵ ̵a̵d̵d̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵[̲a̲d̲d̲_̲c̲o̲m̲m̲,̲\n  ̲  ̲ ̲ ̲add_assoc, mul_assoc, mul_comm, mul_left_comm, p̵o̵w̵_̵a̵d̵d̵ ̵]̵p̲o̲w̲_̲a̲d̲d̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:512:151: This simp argument is unused:\n  add_assoc\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵a̵d̵d̵_̵c̵o̵m̵m̵,̵[̲a̲d̲d̲_̲c̲o̲m̲m̲,̲\n  ̲  ̲ ̲ ̲add_left_comm, a̵d̵d̵_̵a̵s̵s̵o̵c̵,̵ ̵mul_assoc, mul_comm, mul_left_comm, p̵o̵w̵_̵a̵d̵d̵ ̵]̵p̲o̲w̲_̲a̲d̲d̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:512:162: This simp argument is unused:\n  mul_assoc\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵a̵d̵d̵_̵c̵o̵m̵m̵,̵[̲a̲d̲d̲_̲c̲o̲m̲m̲,̲\n  ̲  ̲ ̲ ̲add_left_comm, add_assoc, m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵mul_comm, mul_left_comm, p̵o̵w̵_̵a̵d̵d̵ ̵]̵p̲o̲w̲_̲a̲d̲d̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:512:173: This simp argument is unused:\n  mul_comm\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵a̵d̵d̵_̵c̵o̵m̵m̵,̵[̲a̲d̲d̲_̲c̲o̲m̲m̲,̲\n  ̲  ̲ ̲ ̲add_left_comm, add_assoc, mul_assoc, m̵u̵l̵_̵c̵o̵m̵m̵,̵ ̵mul_left_comm, p̵o̵w̵_̵a̵d̵d̵ ̵]̵p̲o̲w̲_̲a̲d̲d̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:512:183: This simp argument is unused:\n  mul_left_comm\n\nHint: Omit it from the simp argument list.\n  s̵i̵m̵p̵_̵a̵l̵l̵ ̵+̵d̵e̵c̵i̵d̵e̵ ̵[̵ ̵a̵d̵d̵_̵c̵o̵m̵m̵,̵ ̵a̵d̵d̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵ ̵a̵d̵d̵_̵a̵s̵s̵o̵c̵,̵ ̵m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵m̵u̵l̵_̵c̵o̵m̵m̵,̵ ̵m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵ ̵p̵o̵w̵_̵a̵d̵d̵ ̵]̵s̲i̲m̲p̲_̲a̲l̲l̲ ̲+̲d̲e̲c̲i̲d̲e̲ ̲[̲a̲d̲d̲_̲c̲o̲m̲m̲,̲\n  ̲ ̲ ̲ ̲ ̲a̲d̲d̲_̲l̲e̲f̲t̲_̲c̲o̲m̲m̲,̲ ̲a̲d̲d̲_̲a̲s̲s̲o̲c̲,̲ ̲m̲u̲l̲_̲a̲s̲s̲o̲c̲,̲ ̲m̲u̲l̲_̲c̲o̲m̲m̲,̲ ̲p̲o̲w̲_̲a̲d̲d̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:512:198: This simp argument is unused:\n  pow_add\n\nHint: Omit it from the simp argument list.\n  simp_all +decide [̵ ̵a̵d̵d̵_̵c̵o̵m̵m̵,̵[̲a̲d̲d̲_̲c̲o̲m̲m̲,̲\n  ̲  ̲ ̲ ̲add_left_comm, add_assoc, mul_assoc, mul_comm, m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵ ̵p̵o̵w̵_̵a̵d̵d̵ ̵]̵m̲u̲l̲_̲l̲e̲f̲t̲_̲c̲o̲m̲m̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:509:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:510:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:511:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:512:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:537:12: Try this:\n  [apply] exact fun A k v hk ↦ lsdToNat_set A k v base hk",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:526:4: The `induction'` tactic is discouraged: please strongly consider using `induction` instead.\n\nNote: This linter can be disabled with `set_option linter.style.induction false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:547:155: 'simp_all +decide [ Nat.sub_succ, Finset.sum_Ico_eq_sum_range ]' is a flexible tactic modifying '⊢'. Try 'simp_all?' and use the suggested 'simp_all only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:547:155: Try this:\n  [apply] simp_all +decide only [Array.set!_eq_setIfInBounds, Array.size_setIfInBounds]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:559:8: 'convert innerLoop_size X W₀ W₀[m + i]! i m base 0 0 (by linarith) using 1' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:539:34: The following tactic starts with 2 goals and ends with 1 goal, 1 of which is not operated on.\n  linarith [Nat.sub_add_cancel hi]\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:553:36: The following tactic starts with 2 goals and ends with 1 goal, 1 of which is not operated on.\n  linarith\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:523:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:524:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:529:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:532:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:533:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:535:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:536:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:541:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:547:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:548:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:552:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:554:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:572:4: Try this:\n  [apply] exact multiplyDigits_eq_outerLoop W m base hbase hsplit",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:605:49: This simp argument is unused:\n  mul_left_comm\n\nHint: Omit it from the simp argument list.\n  simp +decide [̵ ̵p̵o̵w̵_̵a̵d̵d̵,̵[̲p̲o̲w̲_̲a̲d̲d̲,̲ mul_assoc, mul_comm, m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵ ̵Finset.mul_sum _ _ _, r̵i̵g̵h̵t̵D̵i̵g̵i̵t̵s̵ ̵]̵r̲i̲g̲h̲t̲D̲i̲g̲i̲t̲s̲]̲\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:595:8: The `refine'` tactic is discouraged: please strongly consider using `refine` or `apply` instead.\n\nNote: This linter can be disabled with `set_option linter.style.refine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:593:8: 'simp +decide [ Array.size_extract ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:593:8: Try this:\n  [apply] simp +decide only [Array.size_extract, tsub_zero]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:594:8: 'rw [min_eq_left hsplit.2.le]' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:593:8: 'simp +decide [ Array.size_extract ]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:593:8: Try this:\n  [apply] simp +decide only [Array.size_extract, tsub_zero]",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:595:8: 'refine' Finset.sum_congr rfl fun i hi => _' uses '⊢'!",
+   "level": "info"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:581:36: The following tactic starts with 2 goals and ends with 1 goal, 1 of which is not operated on.\n  aesop\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:583:34: The following tactic starts with 2 goals and ends with 1 goal, 1 of which is not operated on.\n  aesop\nPlease focus on the current goal, for instance using `·` (typed as \"\\.\").\n\nNote: This linter can be disabled with `set_option linter.style.multiGoal false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:571:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:574:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:575:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:576:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:589:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:602:100: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:615:2: 'simp [outVal', laghavaKavatasandhi]' is a flexible tactic modifying '⊢'. Try 'simp?' and use the suggested 'simp only [...]'. Alternatively, use `suffices` to explicitly state the simplified form.\n\nNote: This linter can be disabled with `set_option linter.flexible false`",
+   "level": "warning"},
+  {"message":
+   "fast_verified_mul/LaghavaKavatasandhi.lean:618:2: 'exact multiplyDigits_correct W m base hbase h' hdigits' uses '⊢'!",
+   "level": "info"}],
+ "inputs":
+ [["fast_verified_mul.LaghavaKavatasandhi:deps",
+   [["deps",
+     [["fast_verified_mul/fast_verified_mul:extraDep",
+       [["@fast_verified_mul:extraDep", "00000000000006bb"]]],
+      ["imports",
+       [["Mathlib transitive imports (legacy)", "abc115b3312ed7dd"],
+        ["Mathlib:importAllArts", "ae402e6d874ae9a0"]]]]],
+    ["libs",
+     [["import dynlibs", "00000000000006bb"],
+      ["package external libraries", "00000000000006bb"],
+      ["module dynlibs", "00000000000006bb"],
+      ["module plugins", "00000000000006bb"]]]]],
+  ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
+   "2c8d2623007dfc36"],
+  ["/home/n/Documents/github/verified_mul_dcv/fast_verified_mul/LaghavaKavatasandhi.lean",
+   "fa368a60dddf8eae"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-Dweak.linter.mathlibStandardSet=true", "8a155799906f2b42"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: fast_verified_mul.LaghavaKavatasandhi", "97354bec1a4b2e11"],
+  ["Package.id?: (some fast_verified_mul)", "69bf6ad753670a8e"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "a8fc73a7ef8e0f24"}
